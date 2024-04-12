@@ -20,12 +20,12 @@ function NavbarMain() {
          {icon: <FaChevronDown />,text:"contact us"}
         ].map((item, index) => {
           return (
-            <a className='uppercase font-semibold flex items-center' key={index} href="">
+            <a className='hover:text-[#fbb323]  uppercase font-semibold flex items-center duration-200' key={index} href="">
 
-              {typeof item === 'object' ? (<>    {item.text} {item.icon}</>) : ( item)}
+                {item.text} {item.icon}
 
             </a>
-          );
+        )
         })}
       </div>
       <div className='contact flex items-center gap-4'>
