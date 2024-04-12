@@ -10,7 +10,7 @@ function NavbarMain() {
       <div className='px-10 logo border-r-[1px]'>
         <img src="src\assets\Homelogo.png" alt="" />
       </div>
-      <div className="links flex gap-20 pl-9 items-center">
+      <div className="links flex gap-[5vw] pl-9 items-center">
         {[
           { icon: <FaChevronDown />, text: "Home" },
           {icon: <FaChevronDown />,text:"pages"},
@@ -22,7 +22,7 @@ function NavbarMain() {
           return (
             <a className='hover:text-[#fbb323]  uppercase font-semibold flex items-center duration-200' key={index} href="">
 
-                {item.text} {item.icon}
+                {item.text} <span className=''>{item.icon}</span>
 
             </a>
         )
@@ -32,7 +32,7 @@ function NavbarMain() {
         <span className='p-4 bg-[#05284e] text-xl rounded-full text-[#faa516]'><TbPhoneCall /></span>
         <div>
           <p>call us Now</p>
-          <a className='font-semibold' href="">+(123) 567-8901</a>
+          <a className='font-semibold text-nowrap' href="">+(123) 567-8901</a>
         </div>
         <span className='text-2xl pl-8'>
           <IoSearchOutline />
